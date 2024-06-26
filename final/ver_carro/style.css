@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Menu de navegação */
+nav{
+    list-style: none;
+    background-color: black;
+    font-family: "Victor Mono", monospace;
+}
+
+nav li{
+    display: inline; 
+}
+
+nav li a{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav li a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+
+nav ul li:last-child a {
+    float: right;
+    background-color: white;
+    color: black;
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    position: absolute;
+    background: #734E20;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    background: white;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+/* Pagina principal */
+main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    padding: 100px;
+    justify-content: center;
+    background-color: #734E20;
+    font-family: "Lobster", sans-serif;
+    
+}
+
+html{
+    background-color: #734E20;
+}
+
+main ul img{  
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+/* bagaceira */
+
+main {
+    background-color: #734E20;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fafafa;
+    border-radius: 14px;
+    margin: 14px;
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: 0 3px 5px ;
+}
+
+.header {
+    background-color: #D99441;
+    padding: 24px;
+    text-align: center;
+    color: black;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+
+.content {
+    display: flex;
+    column-gap: 15px;
+}
+
+form {
+    padding: 18px;
+}
+
+.form-content {
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative; 
+    width: 200px;
+}
+
+.form-content label{
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.form-content input{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+}
+
+.form-content select{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+}
+
+form .content button {
+    background-color: #D99441;
+    width: 100%;
+    border-radius: 14px;
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+form .content .excluir {
+    background-color: #ff0800;
+    width: 100%;
+    border-radius: 14px;
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 250px;
+}
+
+.form-content-img input{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+}

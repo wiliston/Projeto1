@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    font-family: 'Cutive Mono';
+    font-style: normal;
+    font-weight: 400;
+}
+
+body{
+    background-color: #734e20;
+}
+.caixaMenu{                  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    padding: 100px;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    box-sizing: border-box;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.37);
+    border-radius: 16px;
+    }
+
+.caixaMenu .useCaixa {
+    position: relative;
+    }
+
+.caixaMenu .useCaixa input {
+    width: 300px;
+    padding: 6px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    }
+
+.caixaMenu .useCaixa label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+    }
+
+.caixaMenu .useCaixa input:focus ~ label,
+.caixaMenu .useCaixa input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #bdb8b8;
+    font-size: 12px;
+    }
+
+    .caixaMenu a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 15px;
+    letter-spacing: 4px
+    }
+
+.caixaMenu a:hover {
+    background: #D99441;
+        color: black;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.212),
+                    0 0 25px rgba(255, 255, 255, 0.212),
+                    0 0 50px rgba(255, 255, 255, 0.212),
+                    0 0 100px rgba(255, 255, 255, 0.212);
+    }
+
+.caixaMenu span {
+    position: absolute;
+    display: block;
+    }
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+    50%, 100%{
+        left: 100%;
+    }
+    }
+.caixaMenu a span:nth-child(1) {
+    bottom: 2px;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffffff);
+    }
+.cadastrar {
+        text-decoration: none;
+        color: #fff;
+    }
+
+
+
+/* Botão cadastrar */
+    #btn-cadastrar {
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #ffffff;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: -15px;
+        letter-spacing: 4px;
+        border: none;
+        background-color: black ;
+}
+
+    #btn-cadastrar:hover {
+        background: #D99441;
+        color: black;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.212),
+                    0 0 25px rgba(255, 255, 255, 0.212),
+                    0 0 50px rgba(255, 255, 255, 0.212),
+                    0 0 100px rgba(255, 255, 255, 0.212);
+    }
